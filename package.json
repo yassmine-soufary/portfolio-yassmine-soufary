@@ -1,0 +1,9 @@
+{
+  "name": "portfolio-workspace",
+  "private": true,
+  "scripts": {
+    "dev": "npm run dev --prefix portfolio",
+    "build": "npm run build --prefix portfolio",
+    "preview": "npm run preview --prefix portfolio"
+  }
+}

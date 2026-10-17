@@ -1,0 +1,150 @@
+.community-card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+}
+
+.community-card {
+    min-width: 0;
+    display: flex;
+    align-items: flex-start;
+    gap: 1.25rem;
+    padding: 1.75rem;
+    border: 1px solid rgba(249, 115, 22, 0.2);
+    border-radius: 18px;
+    background: #0a0a0a;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.community-card:hover {
+    transform: translateY(-4px) scale(1.015);
+    border-color: rgba(255, 69, 0, 0.55);
+    box-shadow: 0 14px 36px rgba(0, 0, 0, 0.38), 0 0 22px rgba(255, 69, 0, 0.12);
+}
+
+.community-card--featured {
+    margin-bottom: 3.5rem;
+}
+
+.community-card__avatar-orbit {
+    position: relative;
+    display: grid;
+    flex: 0 0 74px;
+    width: 74px;
+    height: 74px;
+    place-items: center;
+    margin: 0.25rem 0.25rem 0 0;
+}
+
+.community-card__avatar-orbit::before,
+.community-card__avatar-orbit::after {
+    position: absolute;
+    inset: 0;
+    border: 1px solid rgba(255, 69, 0, 0.45);
+    border-radius: 50%;
+    content: '';
+}
+
+.community-card__avatar-orbit::before {
+    border-top-color: #ff4500;
+    border-right-color: rgba(249, 115, 22, 0.15);
+    animation: community-orbit 8s linear infinite;
+}
+
+.community-card__avatar-orbit::after {
+    inset: 5px -3px;
+    border-color: transparent;
+    border-left-color: rgba(249, 115, 22, 0.75);
+    transform: rotate(-30deg);
+}
+
+.community-card__avatar {
+    display: grid;
+    width: 56px;
+    height: 56px;
+    place-items: center;
+    border: 1px solid rgba(255, 69, 0, 0.5);
+    border-radius: 50%;
+    background: radial-gradient(circle at 35% 25%, rgba(255, 69, 0, 0.2), #0a0a0a 72%);
+    box-shadow: inset 0 0 16px rgba(255, 69, 0, 0.12), 0 0 18px rgba(255, 69, 0, 0.15);
+    color: #ff4500;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+}
+
+.community-card__content {
+    flex: 1;
+    min-width: 0;
+}
+
+.community-card__badges {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.community-card__badge,
+.community-card__period {
+    display: inline-flex;
+    align-items: center;
+    min-height: 24px;
+    padding: 0.25rem 0.6rem;
+    border: 1px solid rgba(255, 69, 0, 0.28);
+    border-radius: 9999px;
+    background: rgba(255, 69, 0, 0.08);
+    color: #ff9a57;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.62rem;
+    font-weight: 600;
+    letter-spacing: 0.07em;
+}
+
+.community-card__period {
+    border-color: rgba(249, 115, 22, 0.3);
+    background: rgba(249, 115, 22, 0.08);
+    color: #fdba74;
+    letter-spacing: 0;
+}
+
+@keyframes community-orbit {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 760px) {
+    .community-card-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 420px) {
+    .community-card {
+        gap: 0.85rem;
+        padding: 1.25rem;
+    }
+
+    .community-card__avatar-orbit {
+        flex-basis: 62px;
+        width: 62px;
+        height: 62px;
+    }
+
+    .community-card__avatar {
+        width: 48px;
+        height: 48px;
+        font-size: 0.75rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .community-card__avatar-orbit::before {
+        animation: none;
+    }
+}

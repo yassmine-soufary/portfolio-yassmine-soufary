@@ -1,0 +1,95 @@
+.experience-timeline {
+    position: relative;
+}
+
+.experience-timeline__track {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    overflow: hidden;
+    transform: translateX(-50%);
+    background: var(--border);
+}
+
+.experience-timeline__fill {
+    width: 100%;
+    height: 100%;
+    transform-origin: top;
+    background: linear-gradient(to bottom, #ff4500, var(--neon-blue));
+    box-shadow: 0 0 8px #ff4500, 0 0 18px rgba(255, 69, 0, 0.65);
+}
+
+.experience-timeline__entries {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.experience-timeline__entry {
+    position: relative;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    align-items: start;
+}
+
+.experience-timeline__card {
+    min-width: 0;
+}
+
+.experience-timeline__entry.is-left .experience-timeline__card {
+    grid-column: 1;
+    margin-right: 2.25rem;
+}
+
+.experience-timeline__entry.is-right .experience-timeline__card {
+    grid-column: 2;
+    margin-left: 2.25rem;
+}
+
+.experience-timeline__card:hover {
+    border-color: var(--neon-blue) !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3), 0 0 18px var(--accent-glow) !important;
+}
+
+.experience-timeline__node {
+    position: absolute;
+    z-index: 1;
+    top: 1.25rem;
+    left: 50%;
+    width: 14px;
+    height: 14px;
+    border: 2px solid var(--surface);
+    border-radius: 50%;
+    background: var(--neon-blue);
+    box-shadow: 0 0 12px var(--neon-blue), 0 0 22px var(--accent-glow);
+    transform: translateX(-50%);
+}
+
+@media (max-width: 760px) {
+    .experience-timeline__track {
+        left: 7px;
+    }
+
+    .experience-timeline__entry {
+        grid-template-columns: minmax(0, 1fr);
+        padding-left: 2.5rem;
+    }
+
+    .experience-timeline__entry.is-left .experience-timeline__card,
+    .experience-timeline__entry.is-right .experience-timeline__card {
+        grid-column: 1;
+        margin: 0;
+    }
+
+    .experience-timeline__node {
+        left: 7px;
+    }
+}
+
+@media (max-width: 520px) {
+    .experience-timeline__card {
+        padding: 1.25rem !important;
+    }
+}
