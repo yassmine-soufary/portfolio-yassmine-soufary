@@ -4,38 +4,39 @@
 @theme inline {
   --color-accent: var(--accent);
   --color-accent-blue: var(--accent-blue);
+  --color-pink: var(--accent);
   --color-crimson: var(--accent-purple);
   --color-charcoal: var(--surface);
 }
 
 @layer base {
   :root, .dark-theme {
-    --bg: #0a0a0a;
-    --surface: #121212;
-    --surface-alt: #1a1a1a;
-    --border: #2a2a2a;
-    --border-light: #3b3b3b;
+    --bg: #09090b;
+    --surface: #000000;
+    --surface-alt: #111113;
+    --border: #27272a;
+    --border-light: #3f3f46;
     --text: #ffffff;
     --text-pure: #FFFFFF;
     --muted: #9ca3af;
     --muted-light: #e5e7eb;
     
-    --electric-blue: #f97316;
-    --neon-blue: #ff4500;
-    --purple: #dc2626;
-    --accent: #ff4500;
-    --accent-blue: #f97316;
-    --accent-purple: #dc2626;
+    --electric-blue: #f472b6;
+    --neon-blue: #ec4899;
+    --purple: #db2777;
+    --accent: #ec4899;
+    --accent-blue: #f472b6;
+    --accent-purple: #db2777;
     
-    --accent-dim: rgba(255, 69, 0, 0.15);
-    --accent-glow: rgba(255, 69, 0, 0.45);
-    --accent-subtle: rgba(255, 69, 0, 0.08);
+    --accent-dim: rgba(236, 72, 153, 0.15);
+    --accent-glow: rgba(236, 72, 153, 0.45);
+    --accent-subtle: rgba(236, 72, 153, 0.08);
     
-    --purple-dim: rgba(220, 38, 38, 0.15);
-    --purple-glow: rgba(220, 38, 38, 0.45);
-    --purple-subtle: rgba(220, 38, 38, 0.08);
+    --purple-dim: rgba(219, 39, 119, 0.15);
+    --purple-glow: rgba(219, 39, 119, 0.45);
+    --purple-subtle: rgba(219, 39, 119, 0.08);
     
-    --electric-gradient: linear-gradient(135deg, #f97316 0%, #ff4500 50%, #dc2626 100%);
+    --electric-gradient: linear-gradient(135deg, #f472b6 0%, #ec4899 50%, #db2777 100%);
   }
 
   .light-theme {
@@ -49,22 +50,22 @@
     --muted: #525252;
     --muted-light: #404040;
     
-    --electric-blue: #c2410c;
-    --neon-blue: #c2410c;
-    --purple: #b91c1c;
-    --accent: #c2410c;
-    --accent-blue: #ea580c;
-    --accent-purple: #b91c1c;
+    --electric-blue: #db2777;
+    --neon-blue: #be185d;
+    --purple: #9d174d;
+    --accent: #be185d;
+    --accent-blue: #db2777;
+    --accent-purple: #9d174d;
     
-    --accent-dim: rgba(194, 65, 12, 0.12);
-    --accent-glow: rgba(194, 65, 12, 0.25);
-    --accent-subtle: rgba(194, 65, 12, 0.06);
+    --accent-dim: rgba(190, 24, 93, 0.12);
+    --accent-glow: rgba(190, 24, 93, 0.25);
+    --accent-subtle: rgba(190, 24, 93, 0.06);
     
-    --purple-dim: rgba(185, 28, 28, 0.12);
-    --purple-glow: rgba(185, 28, 28, 0.25);
-    --purple-subtle: rgba(185, 28, 28, 0.06);
+    --purple-dim: rgba(157, 23, 77, 0.12);
+    --purple-glow: rgba(157, 23, 77, 0.25);
+    --purple-subtle: rgba(157, 23, 77, 0.06);
     
-    --electric-gradient: linear-gradient(135deg, #ea580c 0%, #c2410c 50%, #b91c1c 100%);
+    --electric-gradient: linear-gradient(135deg, #db2777 0%, #be185d 50%, #9d174d 100%);
   }
 }
 
@@ -141,11 +142,11 @@ body {
 
 /* Glow effects */
 .glow-accent {
-  box-shadow: 0 0 20px var(--accent-glow), 0 0 40px rgba(255, 69, 0, 0.15);
+  box-shadow: 0 0 20px var(--accent-glow), 0 0 40px rgba(236, 72, 153, 0.15);
 }
 
 .glow-purple {
-  box-shadow: 0 0 20px var(--purple-glow), 0 0 40px rgba(220, 38, 38, 0.15);
+  box-shadow: 0 0 20px var(--purple-glow), 0 0 40px rgba(219, 39, 119, 0.15);
 }
 
 .glow-dual {

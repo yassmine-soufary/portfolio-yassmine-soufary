@@ -214,8 +214,8 @@ export default function CommandPalette() {
                                         >
                                             <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
                                                 {entry.type === 'section' && <Compass size={16} color="var(--accent)" />}
-                                                {entry.type === 'project' && <FolderKanban size={16} color="#dc2626" />}
-                                                {entry.type === 'skill' && <Cpu size={16} color="#ff4500" />}
+                                                {entry.type === 'project' && <FolderKanban size={16} color="#db2777" />}
+                                                {entry.type === 'skill' && <Cpu size={16} color="#ec4899" />}
                                                 {entry.type === 'action' && <entry.icon size={16} color="var(--accent)" />}
 
                                                 <span style={{

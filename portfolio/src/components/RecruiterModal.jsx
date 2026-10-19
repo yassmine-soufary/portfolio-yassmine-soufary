@@ -53,7 +53,7 @@ export default function RecruiterModal() {
                         display: 'flex',
                         justifyContent: 'space-between',
                         alignItems: 'flex-start',
-                        background: 'linear-gradient(135deg, rgba(249, 115, 22, 0.08) 0%, rgba(246, 154, 92, 0.08) 100%)'
+                        background: 'linear-gradient(135deg, rgba(236, 72, 153, 0.08) 0%, rgba(246, 92, 169, 0.08) 100%)'
                     }}>
                         <div>
                             <span style={{
@@ -108,8 +108,8 @@ export default function RecruiterModal() {
                         <div style={{
                             padding: '1rem 1.25rem',
                             borderRadius: '10px',
-                            background: 'rgba(255, 69, 0, 0.08)',
-                            border: '1px solid rgba(255, 69, 0, 0.3)',
+                            background: 'rgba(236, 72, 153, 0.08)',
+                            border: '1px solid rgba(236, 72, 153, 0.3)',
                             display: 'flex',
                             alignItems: 'center',
                             gap: '1rem'

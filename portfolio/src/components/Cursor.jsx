@@ -34,11 +34,11 @@ export default function Cursor() {
         const onMouseOver = (e) => {
             if (e.target.closest('a, button, [data-hover], input, textarea')) {
                 ring.style.transform = 'translate(-50%,-50%) scale(1.7)'
-                ring.style.borderColor = '#ff6600'
-                ring.style.boxShadow = '0 0 15px rgba(255, 102, 0, 0.4), 0 0 25px rgba(252, 180, 132, 0.3)'
+                ring.style.borderColor = '#ec4899'
+                ring.style.boxShadow = '0 0 15px rgba(236, 72, 153, 0.4), 0 0 25px rgba(252, 132, 192, 0.3)'
             } else {
                 ring.style.transform = 'translate(-50%,-50%) scale(1)'
-                ring.style.borderColor = 'rgba(255, 102, 0, 0.5)'
+                ring.style.borderColor = 'rgba(236, 72, 153, 0.5)'
                 ring.style.boxShadow = 'none'
             }
         }
@@ -63,8 +63,8 @@ export default function Cursor() {
                     width: 6,
                     height: 6,
                     borderRadius: '50%',
-                    background: '#ff6600',
-                    boxShadow: '0 0 8px #ff6600',
+                    background: '#ec4899',
+                    boxShadow: '0 0 8px #ec4899',
                     transform: 'translate(-50%,-50%)',
                     pointerEvents: 'none',
                     zIndex: 99999,
@@ -78,7 +78,7 @@ export default function Cursor() {
                     width: 34,
                     height: 34,
                     borderRadius: '50%',
-                    border: '1px solid rgba(255, 102, 0, 0.5)',
+                    border: '1px solid rgba(236, 72, 153, 0.5)',
                     transform: 'translate(-50%,-50%)',
                     pointerEvents: 'none',
                     zIndex: 99998,

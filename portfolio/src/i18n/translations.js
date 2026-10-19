@@ -35,7 +35,7 @@ export const translations = {
             title: "DE LA DONNÉE À LA DÉCISION",
             p1: "Étudiante en dernière année du cycle ingénieur en informatique à l'Université Mundiapolis de Casablanca, spécialisée en Data Science & Intelligence Artificielle, je poursuis également une double diplomation en Big Data au Yiwu Industrial and Commercial College.",
             p2: "Mes centres d'intérêt s'articulent autour de l'analyse des données, du Data Engineering, de la Business Intelligence, du Machine Learning et du développement d'architectures logicielles fiables qui répondent à des problématiques concrètes du monde réel.",
-            p3: "Je recherche activement un stage de fin d'études (PFE) d'une durée de 4 à 6 mois à partir de février 2027 pour mettre mes compétences analytiques et techniques au service d'une entreprise innovante.",
+            p3: "Dès Février 2027 (6 mois)",
             recruiterCard: {
                 title: "FICHE SYNTHÉTIQUE RECRUTEUR",
                 roleLabel: "Statut",
@@ -43,13 +43,13 @@ export const translations = {
                 specialtyLabel: "Orientation",
                 specialtyValue: "Data Science & Intelligence Artificielle",
                 stackLabel: "Compétences clés",
-                stackValue: "SQL, Python, PostgreSQL, Power BI, Machine Learning",
+                stackValue: "Data Science, IA & Data Engineering",
                 experienceLabel: "Profil professionnel",
                 experienceValue: "Expérience pratique sur données d'entreprise & SGBD",
                 curriculumLabel: "Cursus international",
                 curriculumValue: "Double diplôme Big Data en cours (Yiwu College)",
                 availabilityLabel: "Disponibilité PFE",
-                availabilityValue: "Dès Février 2027 (4 à 6 mois)",
+                availabilityValue: "Dès Février 2027 (6 mois)",
                 actionDownload: "Télécharger le CV officiel (PDF)"
             }
         },
@@ -202,7 +202,7 @@ export const translations = {
             title: "FROM DATA TO DECISION",
             p1: "Final-year computer engineering student at Université Mundiapolis in Casablanca, specializing in Data Science & Artificial Intelligence, while also pursuing an international double-degree in Big Data at Yiwu Industrial and Commercial College.",
             p2: "My core interests center on data analysis, data engineering, business intelligence, machine learning, and building resilient software systems that solve tangible real-world business challenges.",
-            p3: "I am actively seeking a graduation internship (PFE) for 4 to 6 months starting February 2027 to contribute analytical rigor and technical skills to an innovative engineering team.",
+            p3: "Starting February 2027 (6 months)",
             recruiterCard: {
                 title: "RECRUITER EXECUTIVE SUMMARY",
                 roleLabel: "Status",
@@ -210,13 +210,13 @@ export const translations = {
                 specialtyLabel: "Specialization",
                 specialtyValue: "Data Science & Artificial Intelligence",
                 stackLabel: "Core Skills",
-                stackValue: "SQL, Python, PostgreSQL, Power BI, Machine Learning",
+                stackValue: "Data Science, AI & Data Engineering",
                 experienceLabel: "Professional Profile",
                 experienceValue: "Hands-on experience with business databases & BI",
                 curriculumLabel: "Global Curriculum",
                 curriculumValue: "International Big Data Double-Degree in progress",
                 availabilityLabel: "Internship Availability",
-                availabilityValue: "February 2027 (4 to 6 months)",
+                availabilityValue: "February 2027 (6 months)",
                 actionDownload: "Download Official CV (PDF)"
             }
         },

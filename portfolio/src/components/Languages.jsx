@@ -112,8 +112,8 @@ export default function Languages() {
                                         fontSize: '0.74rem',
                                         padding: '0.2rem 0.6rem',
                                         borderRadius: '9999px',
-                                        background: 'rgba(255, 69, 0, 0.12)',
-                                        border: '1px solid rgba(255, 69, 0, 0.3)',
+                                        background: 'rgba(236, 72, 153, 0.12)',
+                                        border: '1px solid rgba(236, 72, 153, 0.3)',
                                         color: 'var(--neon-blue)',
                                         fontWeight: 700
                                     }}>

@@ -1,5 +1,4 @@
 import Navbar from '../components/Navbar'
-import BinaryRainBackground from '../components/BinaryRainBackground'
 import Hero from '../components/Hero'
 import TechMarquee from '../components/TechMarquee'
 import About from '../components/About'
@@ -18,7 +17,6 @@ export default function Home() {
     return (
         <>
             <Navbar />
-            <BinaryRainBackground />
             <main style={{ position: 'relative', zIndex: 1 }}>
                 <Hero />
                 <TechMarquee />

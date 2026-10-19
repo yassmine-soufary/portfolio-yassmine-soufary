@@ -144,7 +144,7 @@ export default function ProjectCase() {
                             fontSize: '0.72rem',
                             padding: '0.3rem 0.8rem',
                             borderRadius: '9999px',
-                            background: 'rgba(255, 69, 0, 0.12)',
+                            background: 'rgba(236, 72, 153, 0.12)',
                             border: '1px solid var(--neon-blue)',
                             color: 'var(--neon-blue)',
                             fontWeight: 700
@@ -346,7 +346,7 @@ export default function ProjectCase() {
                 {/* 4. Results & Key Metrics */}
                 {project.kpis && (
                     <div style={{
-                        background: 'linear-gradient(135deg, rgba(249, 115, 22, 0.06) 0%, rgba(246, 154, 92, 0.06) 100%)',
+                        background: 'linear-gradient(135deg, rgba(236, 72, 153, 0.06) 0%, rgba(246, 92, 169, 0.06) 100%)',
                         border: '1px solid var(--neon-blue)',
                         borderRadius: '14px',
                         padding: '2rem',

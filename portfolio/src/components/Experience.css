@@ -17,8 +17,8 @@
     width: 100%;
     height: 100%;
     transform-origin: top;
-    background: linear-gradient(to bottom, #ff4500, var(--neon-blue));
-    box-shadow: 0 0 8px #ff4500, 0 0 18px rgba(255, 69, 0, 0.65);
+    background: linear-gradient(to bottom, #ec4899, var(--neon-blue));
+    box-shadow: 0 0 8px #ec4899, 0 0 18px rgba(236, 72, 153, 0.65);
 }
 
 .experience-timeline__entries {

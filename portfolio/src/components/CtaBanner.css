@@ -3,10 +3,10 @@
     z-index: 2;
     overflow: hidden;
     padding: 5.5rem 2rem;
-    border-top: 1px solid rgba(249, 115, 22, 0.16);
-    border-bottom: 1px solid rgba(255, 69, 0, 0.2);
+    border-top: 1px solid rgba(236, 72, 153, 0.16);
+    border-bottom: 1px solid rgba(236, 72, 153, 0.2);
     background:
-        radial-gradient(ellipse at 50% 100%, rgba(255, 69, 0, 0.1), transparent 58%),
+        radial-gradient(ellipse at 50% 100%, rgba(236, 72, 153, 0.1), transparent 58%),
         #101010;
 }
 
@@ -16,7 +16,7 @@
     left: 50%;
     width: 100%;
     overflow: hidden;
-    color: rgba(222, 142, 88, 0.04);
+    color: rgba(222, 88, 155, 0.04);
     font-family: 'Space Grotesk', sans-serif;
     font-size: clamp(7rem, 23vw, 21rem);
     font-weight: 800;
@@ -36,7 +36,7 @@
     width: min(900px, 100vw);
     height: 32rem;
     border-radius: 50%;
-    background: radial-gradient(ellipse, rgba(249, 115, 22, 0.12), rgba(255, 69, 0, 0.035) 48%, transparent 72%);
+    background: radial-gradient(ellipse, rgba(236, 72, 153, 0.12), rgba(236, 72, 153, 0.035) 48%, transparent 72%);
     pointer-events: none;
     transform: translateX(-50%);
 }
@@ -62,7 +62,7 @@
 .cta-banner h2 {
     max-width: 950px;
     margin: 0 auto 1rem;
-    background: linear-gradient(110deg, #fff1e8 5%, #ff4500 55%, #f97316 100%);
+    background: linear-gradient(110deg, #fee9f3 5%, #ec4899 55%, #f472b6 100%);
     background-clip: text;
     color: transparent;
     font-family: 'Space Grotesk', sans-serif;
@@ -71,7 +71,7 @@
     letter-spacing: -0.04em;
     line-height: 1.12;
     -webkit-background-clip: text;
-    filter: drop-shadow(0 0 20px rgba(255, 69, 0, 0.14));
+    filter: drop-shadow(0 0 20px rgba(236, 72, 153, 0.14));
 }
 
 .cta-banner__content > p {
@@ -109,32 +109,32 @@
 }
 
 .cta-banner__primary {
-    border: 1px solid #e35b00;
-    background: linear-gradient(110deg, #e85d00, #f97316);
-    box-shadow: 0 0 26px rgba(255, 69, 0, 0.2);
+    border: 1px solid #ec4899;
+    background: linear-gradient(110deg, #f472b6, #f472b6);
+    box-shadow: 0 0 26px rgba(236, 72, 153, 0.2);
     color: #101010;
 }
 
 .cta-banner__primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 0 34px rgba(255, 69, 0, 0.34);
+    box-shadow: 0 0 34px rgba(236, 72, 153, 0.34);
 }
 
 .cta-banner__secondary {
-    border: 1px solid rgba(255, 69, 0, 0.45);
+    border: 1px solid rgba(236, 72, 153, 0.45);
     background: rgba(19, 19, 19, 0.76);
-    color: #ffcba8;
+    color: #fdaad3;
 }
 
 .cta-banner__secondary:hover {
     transform: translateY(-2px);
-    border-color: #ff4500;
-    background: rgba(255, 69, 0, 0.07);
+    border-color: #ec4899;
+    background: rgba(236, 72, 153, 0.07);
 }
 
 .cta-banner__primary:focus-visible,
 .cta-banner__secondary:focus-visible {
-    outline: 2px solid #ff4500;
+    outline: 2px solid #ec4899;
     outline-offset: 3px;
 }
 

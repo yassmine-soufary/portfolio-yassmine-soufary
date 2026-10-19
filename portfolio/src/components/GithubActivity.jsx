@@ -37,7 +37,7 @@ const languageColors = {
 }
 
 function getLanguageColor(language) {
-    return languageColors[language] || '#ff4500'
+    return languageColors[language] || '#ec4899'
 }
 
 function getLanguageStats(repositories) {

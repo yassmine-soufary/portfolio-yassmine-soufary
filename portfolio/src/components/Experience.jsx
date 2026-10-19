@@ -139,8 +139,8 @@ export default function Experience() {
                                                         fontSize: '0.7rem',
                                                         padding: '0.25rem 0.65rem',
                                                         borderRadius: '9999px',
-                                                        background: 'rgba(255, 69, 0, 0.12)',
-                                                        border: '1px solid rgba(255, 69, 0, 0.3)',
+                                                        background: 'rgba(236, 72, 153, 0.12)',
+                                                        border: '1px solid rgba(236, 72, 153, 0.3)',
                                                         color: 'var(--neon-blue)',
                                                         fontWeight: 600
                                                     }}>

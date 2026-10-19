@@ -28,7 +28,7 @@ export default function NotFound() {
                 width: '600px',
                 height: '600px',
                 borderRadius: '50%',
-                background: 'radial-gradient(circle, rgba(255, 69, 0, 0.08) 0%, transparent 70%)',
+                background: 'radial-gradient(circle, rgba(236, 72, 153, 0.08) 0%, transparent 70%)',
                 pointerEvents: 'none'
             }} />
 

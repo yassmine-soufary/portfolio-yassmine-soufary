@@ -6,6 +6,7 @@ import { profile } from '../data/profile'
 import PersonalPhotoCard from './PersonalPhotoCard'
 import { Download, ArrowRight, Mail, MapPin } from 'lucide-react'
 import { Github, Linkedin } from './BrandIcons'
+import BinaryRainBackground from './BinaryRainBackground'
 
 export default function Hero() {
     const { lang } = useApp()
@@ -31,6 +32,7 @@ export default function Hero() {
                 zIndex: 2,
             }}
         >
+            <BinaryRainBackground />
             {/* Ambient Background Glows */}
             <div style={{
                 position: 'absolute',
@@ -39,7 +41,7 @@ export default function Hero() {
                 width: '600px',
                 height: '600px',
                 borderRadius: '50%',
-                background: 'radial-gradient(circle, rgba(249, 115, 22, 0.08) 0%, transparent 70%)',
+                background: 'radial-gradient(circle, rgba(236, 72, 153, 0.08) 0%, transparent 70%)',
                 pointerEvents: 'none',
                 zIndex: 0
             }} />
@@ -50,7 +52,7 @@ export default function Hero() {
                 width: '600px',
                 height: '600px',
                 borderRadius: '50%',
-                background: 'radial-gradient(circle, rgba(246, 154, 92, 0.08) 0%, transparent 70%)',
+                background: 'radial-gradient(circle, rgba(246, 92, 169, 0.08) 0%, transparent 70%)',
                 pointerEvents: 'none',
                 zIndex: 0
             }} />
@@ -80,9 +82,9 @@ export default function Hero() {
                             alignSelf: 'flex-start',
                             padding: '0.45rem 1rem',
                             borderRadius: '9999px',
-                            background: 'rgba(255, 69, 0, 0.08)',
-                            border: '1px solid rgba(255, 69, 0, 0.35)',
-                            boxShadow: '0 0 15px rgba(255, 69, 0, 0.15)'
+                            background: 'rgba(236, 72, 153, 0.08)',
+                            border: '1px solid rgba(236, 72, 153, 0.35)',
+                            boxShadow: '0 0 15px rgba(236, 72, 153, 0.15)'
                         }}
                     >
                         <span style={{
@@ -255,7 +257,7 @@ export default function Hero() {
                                 borderRadius: '8px',
                                 border: '1px solid var(--purple)',
                                 color: 'var(--purple)',
-                                background: 'rgba(246, 154, 92, 0.08)',
+                                background: 'rgba(246, 92, 169, 0.08)',
                                 cursor: 'pointer',
                                 fontWeight: 600,
                                 textDecoration: 'none',
@@ -265,12 +267,12 @@ export default function Hero() {
                                 transition: 'all 0.25s ease'
                             }}
                             onMouseEnter={(e) => {
-                                e.currentTarget.style.background = 'rgba(246, 154, 92, 0.2)'
+                                e.currentTarget.style.background = 'rgba(246, 92, 169, 0.2)'
                                 e.currentTarget.style.transform = 'translateY(-2px)'
                                 e.currentTarget.style.boxShadow = '0 0 25px var(--purple-glow)'
                             }}
                             onMouseLeave={(e) => {
-                                e.currentTarget.style.background = 'rgba(246, 154, 92, 0.08)'
+                                e.currentTarget.style.background = 'rgba(246, 92, 169, 0.08)'
                                 e.currentTarget.style.transform = 'translateY(0)'
                                 e.currentTarget.style.boxShadow = 'none'
                             }}

@@ -69,7 +69,7 @@ export default function PersonalPhotoCard() {
                 scatterX: center + Math.cos(scatterAngle) * (r + scatterDist),
                 scatterY: center + Math.sin(scatterAngle) * (r + scatterDist),
                 char: Math.random() > 0.5 ? '1' : '0',
-                color: Math.random() > 0.45 ? '#ff4500' : (Math.random() > 0.3 ? '#dc2626' : '#FFFFFF'),
+                color: Math.random() > 0.45 ? '#ec4899' : (Math.random() > 0.3 ? '#db2777' : '#FFFFFF'),
                 size: 9 + Math.floor(Math.random() * 5),
                 jitterSpeed: 0.05 + Math.random() * 0.1
             })
@@ -103,7 +103,7 @@ export default function PersonalPhotoCard() {
 
                 // 1. Digital scanline
                 const scanY = ((now * 0.25) % size)
-                ctx.fillStyle = 'rgba(255, 69, 0, 0.25)'
+                ctx.fillStyle = 'rgba(236, 72, 153, 0.25)'
                 ctx.fillRect(0, scanY, size, 2)
 
                 // 2. Cyber glow background wash
@@ -165,7 +165,7 @@ export default function PersonalPhotoCard() {
                     width: 290,
                     height: 290,
                     borderRadius: '50%',
-                    background: 'radial-gradient(circle, rgba(255, 69, 0,0.25) 0%, rgba(246, 154, 92,0.2) 50%, transparent 70%)',
+                    background: 'radial-gradient(circle, rgba(236, 72, 153,0.25) 0%, rgba(246, 92, 169,0.2) 50%, transparent 70%)',
                     pointerEvents: 'none',
                     zIndex: 0
                 }}
@@ -212,13 +212,13 @@ export default function PersonalPhotoCard() {
                 >
                     <defs>
                         <linearGradient id="cyberGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                            <stop offset="0%" stopColor="#f97316" />
-                            <stop offset="50%" stopColor="#ff4500" />
-                            <stop offset="100%" stopColor="#dc2626" />
+                            <stop offset="0%" stopColor="#f472b6" />
+                            <stop offset="50%" stopColor="#ec4899" />
+                            <stop offset="100%" stopColor="#db2777" />
                         </linearGradient>
                         <linearGradient id="cyberGradient2" x1="100%" y1="0%" x2="0%" y2="100%">
-                            <stop offset="0%" stopColor="#dc2626" />
-                            <stop offset="100%" stopColor="#ff4500" />
+                            <stop offset="0%" stopColor="#db2777" />
+                            <stop offset="100%" stopColor="#ec4899" />
                         </linearGradient>
                     </defs>
 
@@ -254,8 +254,8 @@ export default function PersonalPhotoCard() {
                     {/* 4 Cardinal Cyber Marks */}
                     {[0, 90, 180, 270].map((deg) => (
                         <g key={deg} transform={`rotate(${deg} 141 141)`}>
-                            <line x1={141} y1={2} x2={141} y2={12} stroke="#ff4500" strokeWidth="2.5" />
-                            <circle cx={141} cy={16} r={2} fill="#dc2626" />
+                            <line x1={141} y1={2} x2={141} y2={12} stroke="#ec4899" strokeWidth="2.5" />
+                            <circle cx={141} cy={16} r={2} fill="#db2777" />
                         </g>
                     ))}
                 </svg>
@@ -273,8 +273,8 @@ export default function PersonalPhotoCard() {
                             position: 'absolute',
                             inset: -6,
                             borderRadius: '50%',
-                            border: '2px solid #ff4500',
-                            boxShadow: '0 0 20px #ff4500, 0 0 40px #dc2626',
+                            border: '2px solid #ec4899',
+                            boxShadow: '0 0 20px #ec4899, 0 0 40px #db2777',
                             pointerEvents: 'none'
                         }}
                     />
@@ -288,10 +288,10 @@ export default function PersonalPhotoCard() {
                     overflow: 'hidden',
                     position: 'relative',
                     background: '#121212',
-                    border: '2px solid rgba(255, 69, 0, 0.4)',
+                    border: '2px solid rgba(236, 72, 153, 0.4)',
                     boxShadow: active
-                        ? '0 0 35px rgba(255, 69, 0, 0.5), 0 0 60px rgba(246, 154, 92, 0.4)'
-                        : '0 0 20px rgba(255, 69, 0, 0.25)',
+                        ? '0 0 35px rgba(236, 72, 153, 0.5), 0 0 60px rgba(246, 92, 169, 0.4)'
+                        : '0 0 20px rgba(236, 72, 153, 0.25)',
                     transition: 'box-shadow 0.5s ease, border-color 0.5s ease'
                 }}>
                     {/* Natural Photo */}
@@ -330,7 +330,7 @@ export default function PersonalPhotoCard() {
                     <div style={{
                         position: 'absolute',
                         inset: 0,
-                        backgroundImage: 'radial-gradient(circle, rgba(255, 69, 0,0.12) 1px, transparent 1px)',
+                        backgroundImage: 'radial-gradient(circle, rgba(236, 72, 153,0.12) 1px, transparent 1px)',
                         backgroundSize: '16px 16px',
                         pointerEvents: 'none',
                         opacity: active ? 0.8 : 0.2,
@@ -350,7 +350,7 @@ export default function PersonalPhotoCard() {
                     fontFamily: "'JetBrains Mono', monospace",
                     fontSize: '0.65rem',
                     letterSpacing: '0.15em',
-                    color: active ? '#ff4500' : 'var(--muted-light)'
+                    color: active ? '#ec4899' : 'var(--muted-light)'
                 }}
             >
                 <span style={{
@@ -358,8 +358,8 @@ export default function PersonalPhotoCard() {
                     width: 6,
                     height: 6,
                     borderRadius: '50%',
-                    background: active ? '#ff4500' : '#dc2626',
-                    boxShadow: active ? '0 0 10px #ff4500' : '0 0 6px #dc2626'
+                    background: active ? '#ec4899' : '#db2777',
+                    boxShadow: active ? '0 0 10px #ec4899' : '0 0 6px #db2777'
                 }} />
                 <span>
                     {active ? 'DATA_TRANSFORMATION: 1011001' : 'HOVER TO DIGITIZE // TOUCH'}
@@ -386,10 +386,10 @@ function ElectricBorderArc({ active }) {
             <motion.path
                 d="M 139 5 Q 230 20 265 110 T 250 220 T 139 273 T 15 200 T 20 80 Z"
                 fill="none"
-                stroke="#ff4500"
+                stroke="#ec4899"
                 strokeWidth="2.2"
                 strokeDasharray="40 180"
-                filter="drop-shadow(0 0 8px #ff4500) drop-shadow(0 0 14px #dc2626)"
+                filter="drop-shadow(0 0 8px #ec4899) drop-shadow(0 0 14px #db2777)"
                 animate={{
                     strokeDashoffset: [0, -440],
                     opacity: [0.9, 1, 0.4, 1]
@@ -402,10 +402,10 @@ function ElectricBorderArc({ active }) {
             <motion.path
                 d="M 139 5 Q 60 40 15 140 T 80 250 T 200 260 T 265 140 Z"
                 fill="none"
-                stroke="#dc2626"
+                stroke="#db2777"
                 strokeWidth="1.6"
                 strokeDasharray="25 150"
-                filter="drop-shadow(0 0 6px #dc2626)"
+                filter="drop-shadow(0 0 6px #db2777)"
                 animate={{
                     strokeDashoffset: [0, 360],
                     opacity: [0.3, 0.9, 0.2]

@@ -63,7 +63,7 @@ export default function About() {
                     display: 'grid',
                     gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
                     gap: '3rem',
-                    alignItems: 'stretch'
+                    alignItems: 'start'
                 }}>
                     {/* Left: Professional Biography */}
                     <motion.div
@@ -118,7 +118,8 @@ export default function About() {
                             borderLeft: '3px solid var(--purple)',
                             color: 'var(--text-pure)',
                             fontSize: '0.95rem',
-                            lineHeight: 1.7
+                            lineHeight: 1.7,
+                            fontWeight: 700
                         }}>
                             {t.p3}
                         </div>
@@ -137,8 +138,8 @@ export default function About() {
                                 gap: '0.4rem',
                                 padding: '0.35rem 0.8rem',
                                 borderRadius: '9999px',
-                                background: 'rgba(255, 69, 0, 0.1)',
-                                border: '1px solid rgba(255, 69, 0, 0.3)',
+                                background: 'rgba(236, 72, 153, 0.1)',
+                                border: '1px solid rgba(236, 72, 153, 0.3)',
                                 color: 'var(--neon-blue)',
                                 fontSize: '0.74rem',
                                 fontFamily: "'JetBrains Mono', monospace"
@@ -153,8 +154,8 @@ export default function About() {
                                 gap: '0.4rem',
                                 padding: '0.35rem 0.8rem',
                                 borderRadius: '9999px',
-                                background: 'rgba(246, 154, 92, 0.1)',
-                                border: '1px solid rgba(246, 154, 92, 0.3)',
+                                background: 'rgba(246, 92, 169, 0.1)',
+                                border: '1px solid rgba(246, 92, 169, 0.3)',
                                 color: 'var(--purple)',
                                 fontSize: '0.74rem',
                                 fontFamily: "'JetBrains Mono', monospace"
@@ -191,10 +192,11 @@ export default function About() {
                             background: 'var(--surface)',
                             border: '1px solid var(--neon-blue)',
                             borderRadius: '16px',
-                            padding: '2.5rem',
+                            height: 'fit-content',
+                            padding: '1.15rem',
                             display: 'flex',
                             flexDirection: 'column',
-                            gap: '1.4rem',
+                            gap: '0.6rem',
                             position: 'relative',
                             boxShadow: '0 0 35px var(--accent-dim), 0 20px 50px rgba(0, 0, 0, 0.5)',
                         }}
@@ -206,7 +208,7 @@ export default function About() {
                         }}>
                             <span style={{
                                 fontFamily: "'JetBrains Mono', monospace",
-                                fontSize: '0.7rem',
+                                fontSize: '0.58rem',
                                 color: 'var(--neon-blue)',
                                 letterSpacing: '0.15em',
                                 textTransform: 'uppercase',
@@ -215,11 +217,11 @@ export default function About() {
                                 // {card.title}
                             </span>
                             <span style={{
-                                padding: '0.25rem 0.65rem',
+                                padding: '0.15rem 0.45rem',
                                 borderRadius: '9999px',
-                                background: 'rgba(255, 69, 0, 0.15)',
+                                background: 'rgba(236, 72, 153, 0.15)',
                                 color: 'var(--neon-blue)',
-                                fontSize: '0.65rem',
+                                fontSize: '0.55rem',
                                 fontFamily: "'JetBrains Mono', monospace",
                                 fontWeight: 700
                             }}>
@@ -228,64 +230,64 @@ export default function About() {
                         </div>
 
                         {/* Attributes List */}
-                        <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-                            <div style={{ borderBottom: '1px solid var(--border)', paddingBottom: '0.75rem' }}>
-                                <div style={{ fontSize: '0.7rem', fontFamily: "'JetBrains Mono', monospace", color: 'var(--muted)' }}>
+                        <div style={{ display: 'flex', flexDirection: 'column', gap: '0.45rem' }}>
+                            <div style={{ borderBottom: '1px solid var(--border)', paddingBottom: '0.35rem' }}>
+                                <div style={{ fontSize: '0.58rem', fontFamily: "'JetBrains Mono', monospace", color: 'var(--muted)' }}>
                                     {card.roleLabel}
                                 </div>
-                                <div style={{ fontSize: '1rem', fontWeight: 600, color: 'var(--text-pure)', marginTop: '0.2rem' }}>
+                                <div style={{ fontSize: '0.82rem', fontWeight: 600, color: 'var(--text-pure)', marginTop: '0.1rem' }}>
                                     {card.roleValue}
                                 </div>
                             </div>
 
-                            <div style={{ borderBottom: '1px solid var(--border)', paddingBottom: '0.75rem' }}>
-                                <div style={{ fontSize: '0.7rem', fontFamily: "'JetBrains Mono', monospace", color: 'var(--muted)' }}>
+                            <div style={{ borderBottom: '1px solid var(--border)', paddingBottom: '0.35rem' }}>
+                                <div style={{ fontSize: '0.58rem', fontFamily: "'JetBrains Mono', monospace", color: 'var(--muted)' }}>
                                     {card.specialtyLabel}
                                 </div>
-                                <div style={{ fontSize: '0.98rem', fontWeight: 600, color: 'var(--neon-blue)', marginTop: '0.2rem' }}>
+                                <div style={{ fontSize: '0.8rem', fontWeight: 600, color: 'var(--neon-blue)', marginTop: '0.1rem' }}>
                                     {card.specialtyValue}
                                 </div>
                             </div>
 
-                            <div style={{ borderBottom: '1px solid var(--border)', paddingBottom: '0.75rem' }}>
-                                <div style={{ fontSize: '0.7rem', fontFamily: "'JetBrains Mono', monospace", color: 'var(--muted)' }}>
+                            <div style={{ borderBottom: '1px solid var(--border)', paddingBottom: '0.35rem' }}>
+                                <div style={{ fontSize: '0.58rem', fontFamily: "'JetBrains Mono', monospace", color: 'var(--muted)' }}>
                                     {card.stackLabel}
                                 </div>
-                                <div style={{ fontSize: '0.92rem', color: 'var(--text)', marginTop: '0.2rem', fontWeight: 500 }}>
+                                <div style={{ fontSize: '0.75rem', color: 'var(--text)', marginTop: '0.1rem', fontWeight: 500 }}>
                                     {card.stackValue}
                                 </div>
                             </div>
 
-                            <div style={{ borderBottom: '1px solid var(--border)', paddingBottom: '0.75rem' }}>
-                                <div style={{ fontSize: '0.7rem', fontFamily: "'JetBrains Mono', monospace", color: 'var(--muted)' }}>
+                            <div style={{ borderBottom: '1px solid var(--border)', paddingBottom: '0.35rem' }}>
+                                <div style={{ fontSize: '0.58rem', fontFamily: "'JetBrains Mono', monospace", color: 'var(--muted)' }}>
                                     {card.curriculumLabel}
                                 </div>
-                                <div style={{ fontSize: '0.92rem', color: 'var(--purple)', marginTop: '0.2rem', fontWeight: 500 }}>
+                                <div style={{ fontSize: '0.75rem', color: 'var(--purple)', marginTop: '0.1rem', fontWeight: 500 }}>
                                     {card.curriculumValue}
                                 </div>
                             </div>
 
-                            <div style={{ borderBottom: '1px solid var(--border)', paddingBottom: '0.75rem' }}>
-                                <div style={{ fontSize: '0.7rem', fontFamily: "'JetBrains Mono', monospace", color: 'var(--muted)' }}>
+                            <div style={{ borderBottom: '1px solid var(--border)', paddingBottom: '0.35rem' }}>
+                                <div style={{ fontSize: '0.58rem', fontFamily: "'JetBrains Mono', monospace", color: 'var(--muted)' }}>
                                     {card.experienceLabel}
                                 </div>
-                                <div style={{ fontSize: '0.92rem', color: 'var(--text)', marginTop: '0.2rem' }}>
+                                <div style={{ fontSize: '0.75rem', color: 'var(--text)', marginTop: '0.1rem' }}>
                                     {card.experienceValue}
                                 </div>
                             </div>
 
                             <div>
-                                <div style={{ fontSize: '0.7rem', fontFamily: "'JetBrains Mono', monospace", color: 'var(--muted)' }}>
+                                <div style={{ fontSize: '0.58rem', fontFamily: "'JetBrains Mono', monospace", color: 'var(--muted)' }}>
                                     {card.availabilityLabel}
                                 </div>
-                                <div style={{ fontSize: '1rem', fontWeight: 700, color: '#ff4500', marginTop: '0.2rem' }}>
+                                <div style={{ fontSize: '0.82rem', fontWeight: 700, color: '#ec4899', marginTop: '0.1rem' }}>
                                     {card.availabilityValue}
                                 </div>
                             </div>
                         </div>
 
                         {/* Direct PDF CV Download Button */}
-                        <div style={{ marginTop: 'auto', display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
+                        <div style={{ marginTop: 'auto', display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
                             <a
                                 href={profile.cvPath}
                                 download="CV_Yassmine_Soufary.pdf"
@@ -293,35 +295,35 @@ export default function About() {
                                 rel="noopener noreferrer"
                                 style={{
                                     flex: 1,
-                                    padding: '0.85rem 1.4rem',
+                                    padding: '0.55rem 0.75rem',
                                     borderRadius: '8px',
                                     background: 'var(--electric-gradient)',
                                     color: '#000',
                                     fontWeight: 700,
-                                    fontSize: '0.8rem',
+                                    fontSize: '0.66rem',
                                     fontFamily: "'JetBrains Mono', monospace",
                                     textDecoration: 'none',
                                     display: 'flex',
                                     alignItems: 'center',
                                     justifyContent: 'center',
-                                    gap: '0.5rem',
+                                    gap: '0.35rem',
                                     boxShadow: '0 0 20px var(--accent-glow)'
                                 }}
                             >
-                                <FileText size={16} />
+                                <FileText size={14} />
                                 <span>{card.actionDownload}</span>
                             </a>
 
                             <button
                                 onClick={() => setIsRecruiterModalOpen(true)}
                                 style={{
-                                    padding: '0.85rem 1.2rem',
+                                    padding: '0.55rem 0.7rem',
                                     borderRadius: '8px',
                                     background: 'var(--surface-alt)',
                                     border: '1px solid var(--border)',
                                     color: 'var(--text)',
                                     fontFamily: "'JetBrains Mono', monospace",
-                                    fontSize: '0.8rem',
+                                    fontSize: '0.66rem',
                                     cursor: 'pointer',
                                     fontWeight: 600
                                 }}

@@ -46,7 +46,7 @@ export default function HowIThink() {
                                     width: 72, height: 72, borderRadius: '50%',
                                     background: 'var(--bg)', border: '1px solid var(--accent)',
                                     display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',
-                                    boxShadow: '0 0 20px rgba(255, 102, 0, 0.2), 0 0 35px rgba(252, 180, 132, 0.15)',
+                                    boxShadow: '0 0 20px rgba(236, 72, 153, 0.2), 0 0 35px rgba(252, 132, 192, 0.15)',
                                     cursor: 'default'
                                 }}>
                                     <span style={{

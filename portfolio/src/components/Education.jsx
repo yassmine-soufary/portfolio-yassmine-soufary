@@ -129,7 +129,7 @@ export default function Education() {
                                             fontSize: '0.65rem',
                                             padding: '0.2rem 0.55rem',
                                             borderRadius: '9999px',
-                                            background: isCurrent ? 'rgba(246, 154, 92, 0.15)' : 'var(--surface)',
+                                            background: isCurrent ? 'rgba(246, 92, 169, 0.15)' : 'var(--surface)',
                                             border: isCurrent ? '1px solid var(--purple)' : '1px solid var(--border)',
                                             color: isCurrent ? 'var(--purple)' : 'var(--muted)',
                                             fontWeight: 600

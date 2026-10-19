@@ -14,7 +14,7 @@ export const associationRoles = [
         period: "2025 – Présent",
         periodEn: "2025 – Present",
         icon: "Zap",
-        color: "#f97316",
+        color: "#f472b6",
         description: {
             fr: "Gestion administrative, suivi de la trésorerie et coordination des initiatives technologiques et événements du club.",
             en: "Administrative management, treasury monitoring, and coordination of technological initiatives and club events."
@@ -30,7 +30,7 @@ export const associationRoles = [
         period: "2024 – Présent",
         periodEn: "2024 – Present",
         icon: "Users",
-        color: "#dc2626",
+        color: "#db2777",
         description: {
             fr: "Coordination des équipes, organisation des projets associatifs et soutien au développement des actions étudiantes.",
             en: "Team leadership, coordination of student association projects, and driving club initiatives."

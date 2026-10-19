@@ -194,7 +194,7 @@ export default function Navbar() {
                     onClick={() => setIsRecruiterModalOpen(true)}
                     title={t.recruiterSummary}
                     style={{
-                        background: 'rgba(255, 69, 0, 0.12)',
+                        background: 'rgba(236, 72, 153, 0.12)',
                         border: '1px solid var(--neon-blue)',
                         color: 'var(--neon-blue)',
                         cursor: 'pointer',
@@ -214,7 +214,7 @@ export default function Navbar() {
                         e.currentTarget.style.boxShadow = '0 0 15px var(--accent-glow)'
                     }}
                     onMouseLeave={(e) => {
-                        e.currentTarget.style.background = 'rgba(255, 69, 0, 0.12)'
+                        e.currentTarget.style.background = 'rgba(236, 72, 153, 0.12)'
                         e.currentTarget.style.color = 'var(--neon-blue)'
                         e.currentTarget.style.boxShadow = 'none'
                     }}
@@ -262,7 +262,7 @@ export default function Navbar() {
                         justifyContent: 'center',
                     }}
                 >
-                    {theme === 'dark' ? <Sun size={15} color="#FBBF24" /> : <Moon size={15} color="#dc2626" />}
+                    {theme === 'dark' ? <Sun size={15} color="#FBBF24" /> : <Moon size={15} color="#db2777" />}
                 </button>
 
                 {/* Mobile Menu Toggle Button */}

@@ -58,8 +58,8 @@ export default function SkillsConstellation() {
                         >
                             <defs>
                                 <linearGradient id="constellationGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" stopColor="#ff6600" />
-                                    <stop offset="100%" stopColor="#fcb484" />
+                                    <stop offset="0%" stopColor="#ec4899" />
+                                    <stop offset="100%" stopColor="#fc84c0" />
                                 </linearGradient>
                             </defs>
                             {/* Background rings */}
@@ -162,8 +162,8 @@ export default function SkillsConstellation() {
                             { cat: 'tech', color: 'var(--accent)', label: 'Technology' },
                             { cat: 'ai', color: '#7fffd4', label: 'AI/ML' },
                             { cat: 'viz', color: '#40e0d0', label: 'Visualization' },
-                            { cat: 'tool', color: '#b25a20', label: 'Tools' },
-                            { cat: 'design', color: '#d17f48', label: 'Design' },
+                            { cat: 'tool', color: '#b22069', label: 'Tools' },
+                            { cat: 'design', color: '#d1488d', label: 'Design' },
                         ].map(l => (
                             <div key={l.cat} style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
                                 <div style={{ width: 8, height: 8, borderRadius: '50%', background: l.color }} />

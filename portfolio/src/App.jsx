@@ -4,6 +4,7 @@ import Home from './pages/Home'
 import ProjectCase from './pages/ProjectCase'
 import NotFound from './pages/NotFound'
 import Cursor from './components/Cursor'
+import CursorParticleTrail from './components/CursorParticleTrail'
 import CommandPalette from './components/CommandPalette'
 import RecruiterModal from './components/RecruiterModal'
 
@@ -13,6 +14,7 @@ export default function App() {
       <BrowserRouter>
         <div className="noise-overlay">
           <Cursor />
+          <CursorParticleTrail />
           <CommandPalette />
           <RecruiterModal />
           <Routes>
